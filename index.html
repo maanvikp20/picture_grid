@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gird</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        nav{
+            display: flex;
+            background-color: plum;
+
+        }
+
+        nav > a{
+            margin: 10px;
+            padding-left: 20px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+            grid-template-areas: "costume_expressions costume_expressions costume_expressions costume_expressions facebook"
+                                "costume_expressions costume_expressions costume_expressions costume_expressions twitter"
+                                "costume_expressions costume_expressions costume_expressions costume_expressions anon_mask"
+                                "animal_costume_party animal_costume_party jonkler avg_british_resident pink_wig_woman"
+                                "brown_magician super_sale super_sale candy napoleon"
+                                "brown_magician santa pink_wig_woman pink_wig_woman free_shipping"
+                                "props santa animated_halloween1 animated_halloween1 witches_ghouls_goblins"
+                                "blackmask mask mask . .";
+            gap: 10px;
+        }
+        .costume_expressions{
+            grid-area: costume_expressions;
+        }
+        .facebook{
+            grid-area: facebook;
+        }
+        .twitter{
+            grid-area: twitter;
+        }
+        .anon_mask{
+            grid-area: anon_mask;
+        }
+        .animal_costume_family{
+            grid-area: animal_costume_family;
+        }
+        .jonkler{
+            grid-area: jonkler;
+        }
+        .avg_british_resident{
+            grid-area: avg_british_resident;
+        }
+        .pink_wig_woman{
+            grid-area: pink_wig_woman;
+        }
+        .brown_magician{
+            grid-area: brown_magician;
+        }
+        .super_sale{
+            grid-area: super_sale;
+        }
+        .candy{
+            grid-area: candy;
+        }
+        .napoleon{
+            grid-area: napoleon;
+        }
+        .santa{
+            grid-area: santa;
+        }
+        .pink_wig_woman{
+            grid-area: pink_wig_woman;
+        }
+        .free_shipping{
+            grid-area: free_shipping;
+        }
+        .props{
+            grid-area: props;
+        }
+        .animated_halloween1{
+            grid-area: animated_halloween1;
+        }
+        .animated_halloween2{
+            grid-area: animated_halloween2;
+        }
+        .witches_ghouls_goblins{
+            grid-area: witches_ghouls_goblins;
+        }
+        .blackmask{
+            grid-area: blackmask;
+        }
+        .mask{
+            grid-area: mask;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Enter Site</a>
+        <a href="#">My Account</a>
+        <a href="#">Track Orders</a>
+        <a href="#">Contact Info</a>
+    </nav>
+    <div class="container">
+        <img class="costume_expressions" src="./images/costume_expressions.png">
+        <img class="twitter" src="./images/twitter.png">
+        <img class="facebook" src="./images/facebook.png">
+        <img class="anon_mask" src="./images/anon_mask.png">
+        <img class="animal_costume_family" src="./images/animal_costume_family.png">
+        <img class="jonkler" src="./images/jonkler.png">
+        <img class="avg_british_resident" src="./images/avg_british_resident.png">
+        <img class="pink_wig_woman" src="./images/pink_wig_woman.png">
+        <img class="brown_magician" src="./images/brown_magician.png">
+        <img class="super_sale" src="./images/super_sale.png">
+        <img class="candy" src="./images/candy.png">
+        <img class="napoleon" src="./images/napoleon.png">
+        <img class="santa" src="./images/santa.png">
+        <img class="pink_banner_woman" src="./images/pink_banner_woman.png">
+        <img class="free_shipping" src="./images/free_shipping.png">
+        <img class="props" src="./images/props.png">
+        <img class="animated_halloween1" src="./images/animated_halloween1.png">
+        <img class="animated_halloween2" src="./images/animated_halloween2.png">
+        <img class="witches_ghouls_goblins" src="./images/witches_ghouls_goblins.png">
+        <img class="blackmask" src="./images/blackmask.png">
+        <img class="mask" src="./images/mask.png">
+    </div>
+</body>
+</html>

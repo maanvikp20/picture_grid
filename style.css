@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    background-color: plum;
+
+}
+
+nav > a{
+    margin: 10px;
+    padding-left: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container{
+    grid-template-areas:
+                "costume_expressions costume_expressions costume_expressions costume_expressions facebook"
+                "costume_expressions costume_expressions costume_expressions costume_expressions twitter"
+                "costume_expressions costume_expressions costume_expressions costume_expressions anon_mask";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
